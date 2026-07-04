@@ -14,27 +14,10 @@ spec:
     - name: image-reference
       type: string
       description: The image registry path
-
   workspaces:
     - name: shared-workspace
-
   tasks:
-    - name: clone
-      taskRef:
-        name: git-clone
-        kind: ClusterTask
-      workspaces:
-        - name: output
-          workspace: shared-workspace
-      params:
-        - name: url
-          value: $(params.repo-url)
-        - name: revision
-          value: $(params.revision)
-
     - name: npminstall
-      runAfter:
-        - clone
       taskRef:
         name: npm
       workspaces:

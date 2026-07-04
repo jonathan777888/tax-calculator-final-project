@@ -5,7 +5,6 @@ metadata:
 spec:
   pipelineRef:
     name: tax-calculator-pipeline
-
   params:
     - name: repo-url
       value: https://github.com/jonathan777888/tax-calculator-final-project.git
@@ -13,7 +12,6 @@ spec:
       value: main
     - name: image-reference
       value: us.icr.io/jonathan-tax-calculator/tax-calculator:latest
-
   workspaces:
     - name: shared-workspace
       volumeClaimTemplate:
