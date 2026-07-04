@@ -9,10 +9,8 @@ spec:
   params:
     - name: repo-url
       value: https://github.com/jonathan777888/tax-calculator-final-project.git
-
     - name: revision
       value: main
-
     - name: image-reference
       value: us.icr.io/jonathan-tax-calculator/tax-calculator:latest
 

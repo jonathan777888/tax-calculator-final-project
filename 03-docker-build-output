@@ -1,0 +1,83 @@
+docker build -t tax-calculator .
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 305B done
+#1 DONE 0.1s
+
+#2 [auth] library/nginx:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/nginx:latest
+#3 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 2.32kB done
+#5 DONE 0.0s
+
+#6 [1/6] FROM docker.io/library/nginx:latest@sha256:ec4ed8b5299e5e90694af7750eb6dffd2627317d30544d056b0371f8082f7bce
+#6 resolve docker.io/library/nginx:latest@sha256:ec4ed8b5299e5e90694af7750eb6dffd2627317d30544d056b0371f8082f7bce 0.0s done
+#6 DONE 0.2s
+
+#6 [1/6] FROM docker.io/library/nginx:latest@sha256:ec4ed8b5299e5e90694af7750eb6dffd2627317d30544d056b0371f8082f7bce
+#6 sha256:1645c1e06f466d45c9286f69adcebaca84e17d0ec6de5ff52542822f41dccd44 1.40kB / 1.40kB 0.1s done
+#6 sha256:fcb6fd84b2a0c1f97cc70a8898cd1a9436e27c469f9c7d4dd1a8e4cb9123009d 1.21kB / 1.21kB 0.1s done
+#6 sha256:cd9307c9ecd85b9e13dad05ec99ec40d3abb9cd297a4d272e293810514755f6b 404B / 404B 0.0s done
+#6 sha256:acf093e7a04f53b16d65757d4fba7a9174e5332a74f9aacf463b40f16899ed0f 954B / 954B 0.1s done
+#6 sha256:1b30016634d50c4b4867ec44713ef09137ddf5ecea056ba8d13e092c3479471c 629B / 629B 0.1s done
+#6 sha256:df68ee7e7a00fb761abece5f9fc7184d02b9cfd37cb24cf01e6afa91734a3b1c 12.58MB / 33.32MB 0.3s
+#6 sha256:e95a6c7ea7d49b37920899b023ecd0e32796c976c1748491f76cae53ba86d13a 2.10MB / 29.79MB 0.2s
+#6 sha256:df68ee7e7a00fb761abece5f9fc7184d02b9cfd37cb24cf01e6afa91734a3b1c 20.97MB / 33.32MB 0.5s
+#6 sha256:e95a6c7ea7d49b37920899b023ecd0e32796c976c1748491f76cae53ba86d13a 10.49MB / 29.79MB 0.3s
+#6 sha256:df68ee7e7a00fb761abece5f9fc7184d02b9cfd37cb24cf01e6afa91734a3b1c 33.32MB / 33.32MB 0.6s
+#6 sha256:e95a6c7ea7d49b37920899b023ecd0e32796c976c1748491f76cae53ba86d13a 16.78MB / 29.79MB 0.5s
+#6 sha256:e95a6c7ea7d49b37920899b023ecd0e32796c976c1748491f76cae53ba86d13a 29.79MB / 29.79MB 0.6s
+#6 sha256:df68ee7e7a00fb761abece5f9fc7184d02b9cfd37cb24cf01e6afa91734a3b1c 33.32MB / 33.32MB 1.6s done
+#6 sha256:e95a6c7ea7d49b37920899b023ecd0e32796c976c1748491f76cae53ba86d13a 29.79MB / 29.79MB 1.6s done
+#6 extracting sha256:e95a6c7ea7d49b37920899b023ecd0e32796c976c1748491f76cae53ba86d13a
+#6 extracting sha256:e95a6c7ea7d49b37920899b023ecd0e32796c976c1748491f76cae53ba86d13a 1.4s done
+#6 DONE 3.3s
+
+#6 [1/6] FROM docker.io/library/nginx:latest@sha256:ec4ed8b5299e5e90694af7750eb6dffd2627317d30544d056b0371f8082f7bce
+#6 extracting sha256:df68ee7e7a00fb761abece5f9fc7184d02b9cfd37cb24cf01e6afa91734a3b1c
+#6 extracting sha256:df68ee7e7a00fb761abece5f9fc7184d02b9cfd37cb24cf01e6afa91734a3b1c 2.5s done
+#6 DONE 5.8s
+
+#6 [1/6] FROM docker.io/library/nginx:latest@sha256:ec4ed8b5299e5e90694af7750eb6dffd2627317d30544d056b0371f8082f7bce
+#6 extracting sha256:1b30016634d50c4b4867ec44713ef09137ddf5ecea056ba8d13e092c3479471c 0.0s done
+#6 extracting sha256:acf093e7a04f53b16d65757d4fba7a9174e5332a74f9aacf463b40f16899ed0f 0.0s done
+#6 extracting sha256:cd9307c9ecd85b9e13dad05ec99ec40d3abb9cd297a4d272e293810514755f6b 0.0s done
+#6 extracting sha256:fcb6fd84b2a0c1f97cc70a8898cd1a9436e27c469f9c7d4dd1a8e4cb9123009d 0.0s done
+#6 extracting sha256:1645c1e06f466d45c9286f69adcebaca84e17d0ec6de5ff52542822f41dccd44 0.0s done
+#6 DONE 5.9s
+
+#7 [2/6] COPY favicon.ico /usr/share/nginx/html/favicon.ico
+#7 DONE 2.5s
+
+#8 [3/6] COPY index.html /usr/share/nginx/html/index.html
+#8 DONE 0.1s
+
+#9 [4/6] COPY script.js /usr/share/nginx/html/script.js
+#9 DONE 0.0s
+
+#10 [5/6] COPY style.css /usr/share/nginx/html/style.css
+#10 DONE 0.1s
+
+#11 [6/6] COPY taxCalculator.js /usr/share/nginx/html/taxCalculator.js
+#11 DONE 0.0s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 1.0s done
+#12 exporting manifest sha256:7be4f53af919ee120360d2c14bd08774615df0bc8f4efd16557f945a214db6ae 0.0s done
+#12 exporting config sha256:7c00ef6604769d9d5fe1e04f5e90d0ea73cbbb8037be1246410da1d2014dc483 0.0s done
+#12 exporting attestation manifest sha256:ebe57916324a812c6e20422be149a558378be000c34114f992bcde2ce46f7e9b 0.0s done
+#12 exporting manifest list sha256:c023a1abe52476431620c7854355fea9c4eff69f4da5420175deb5243b31032f
+#12 exporting manifest list sha256:c023a1abe52476431620c7854355fea9c4eff69f4da5420175deb5243b31032f 0.0s done
+#12 naming to docker.io/library/tax-calculator:latest 0.1s done
+#12 unpacking to docker.io/library/tax-calculator:latest 0.1s done
+#12 DONE 1.5s

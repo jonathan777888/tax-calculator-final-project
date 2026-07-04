@@ -7,12 +7,10 @@ spec:
     - name: repo-url
       type: string
       description: The GitHub repository URL
-
     - name: revision
       type: string
       description: The Git revision to build
       default: main
-
     - name: image-reference
       type: string
       description: The image registry path

@@ -1,0 +1,12 @@
+{
+  "name": "tax-calculator-final-project",
+  "version": "1.0.0",
+  "description": "Final project tax calculator with Jasmine, Docker and Tekton",
+  "main": "taxCalculator.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "devDependencies": {
+    "jasmine": "^5.1.0"
+  }
+}
